@@ -61,5 +61,5 @@ class DataPreprocessor:
         self.save_data(X, y)
 
 if __name__ == "__main__":
-    preprocessor = DataPreprocessor('data\\raw\\dataset.csv', 'data\\processed\\processed_dataset.csv')
+    preprocessor = DataPreprocessor(r'data/raw/Steel_industry_data.csv', r'data/processed/processed_dataset.csv')
     preprocessor.run()
