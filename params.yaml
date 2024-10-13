@@ -1,0 +1,21 @@
+base:
+
+data:
+  #loading data
+  input_data: "data/Steel_industry_data.csv"
+
+train:
+  test_size: 0.2
+  random_state: 42
+  activation: "relu"
+  activation_2: "softmax"
+  optimizer: "adam"
+  loss: "sparse_categorical_crossentropy"
+  epochs: 50
+  batch_size: 10
+  verbose: 1
+  axis: -1
+
+reports:
+  model: "models/steel_industry_model.keras" 
+
