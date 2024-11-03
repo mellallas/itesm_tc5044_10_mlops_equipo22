@@ -6,8 +6,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import LabelEncoder
 
 def data_transformer(data):
-    data['date'] = pd.to_datetime(data['date'], format="%d/%m/%Y %H:%M")
-    data['month'] = data['date'].dt.month_name()
+    #data['date'] = pd.to_datetime(data['date'], format="%d/%m/%Y %H:%M")
+    #data['month'] = data['date'].dt.month_name()
 
     numeric_variables = data.select_dtypes(include='number').columns.to_list()
 
