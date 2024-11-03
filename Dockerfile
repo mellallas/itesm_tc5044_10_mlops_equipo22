@@ -4,7 +4,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the model and server code
-COPY wine_model.pkl /app/
+COPY rfc_model.pkl /app/
 COPY main.py /app/
 
 # Install dependencies
